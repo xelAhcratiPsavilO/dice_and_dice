@@ -56,5 +56,6 @@ I'd like DND to overwrite inputs.
 ## Diagram of Correlation
 
 DND <== enquire_topic ==> Topic
+DND <== enquire_choice ==> Choice
 
 ## Example of Use
