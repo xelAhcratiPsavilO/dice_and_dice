@@ -59,7 +59,7 @@ describe Dnd do
         # act
         subject.get_choice2
         # assert
-        expect(subject.show_input('choice2')).to eq('Your input is now: shirts')
+        expect(subject.overwrite_input('choice2')).to eq('Your input is now: shirts')
       end
     end
   end

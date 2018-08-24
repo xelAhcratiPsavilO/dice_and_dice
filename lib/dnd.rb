@@ -18,6 +18,19 @@ class Dnd
     end
   end
 
+  def overwrite_input(input)
+    if input == 'topic'
+      get_topic
+      p "Your input is now: #{@topic}"
+    elsif input == 'choice1'
+      get_choice1
+      p "Your input is now: #{@choice1}"
+    else input == 'choice2'
+      get_choice2
+      p "Your input is now: #{@choice2}"
+    end
+  end
+
   # private
 
   def get_topic
