@@ -8,6 +8,10 @@ class Dnd
     p "What choices should you have?"
   end
 
+  def enquire_option
+    p "What options would you like to include?"
+  end
+
   def show_input(input)
     if input == 'topic'
       p "Your input was: #{@topic}"
