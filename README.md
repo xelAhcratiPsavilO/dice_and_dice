@@ -22,6 +22,16 @@ I'd like DND to enquire me about the topic.
 |--|--|
 |Topic||
 |DND|enquire_topic|
+```
+As a user,
+So that I can customise my DND,
+I'd like DND to enquire me about the choices.
+```
+|Objects|Messages|
+|--|--|
+|Topic||
+|Choice||
+|DND|enquire_choice|
 
 ## Diagram of Correlation
 
