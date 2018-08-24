@@ -63,6 +63,17 @@ I'd like DND to enquire me about the options.
 |Choice||
 |Option||
 |DND|enquire_option|
+```
+As a user,
+So that I can save time,
+I'd like DND to give me a trivial answer.
+```
+|Objects|Messages|
+|--|--|
+|Topic||
+|Choice||
+|Option||
+|DND|answer|
 
 ## Diagram of Correlation
 
@@ -70,6 +81,6 @@ DND <== enquire_topic ==> Topic </br>
 DND <== enquire_choice ==> Choice </br>
 DND <== show_input(input) ==> Topic/Choice </br>
 DND <== overwrite_input ==> Topic/Choice </br>
-DND <== enquire_choice ==> Option </br>
+DND <== enquire_option ==> Option </br>
 
 ## Example of Use
