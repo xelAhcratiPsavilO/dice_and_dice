@@ -20,9 +20,9 @@ describe Dnd do
       # arrange
       set_user_input
       # act
-      subject.enquire_topic
+      subject.get_topic
       # assert
-      expect(subject.show_input(topic)).to eq('Your input was: What should I wear today?')
+      expect(subject.show_input('topic')).to eq('Your input was: What should I wear today?')
     end
   end
 
