@@ -8,4 +8,10 @@ describe Dnd do
     end
   end
 
+  describe '#enquire_choice' do
+    it 'asks the user about 2 choices' do
+      expect(subject.enquire_choice).to eq('What choices should you have?')
+    end
+  end
+
 end
