@@ -64,6 +64,12 @@ describe Dnd do
     end
   end
 
+  describe '#enquire_option' do
+    it 'asks the user about options' do
+      expect(subject.enquire_option).to eq('What options would you like to include?')
+    end
+  end
+
   def set_user_input
     allow_any_instance_of(Object).to receive(:gets).and_return(*user_input)
   end
