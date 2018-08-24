@@ -39,6 +39,31 @@ describe Dnd do
     end
   end
 
+  describe '#overwrite_input' do
+    context 'overwrite the topic' do
+      let(:user_input) { ['What should I pack for my trip?'] }
+      it 'overwrites the selected topic' do
+        # arrange
+        set_user_input
+        # act
+        subject.get_topic
+        # assert
+        expect(subject.overwrite_input('topic')).to eq('Your input is now: What should I pack for my trip?')
+      end
+    end
+    context 'overwrite the choice2' do
+      let(:user_input) { ['shirts'] }
+      it 'overwrites the selected choice' do
+        # arrange
+        set_user_input
+        # act
+        subject.get_choice2
+        # assert
+        expect(subject.show_input('choice2')).to eq('Your input is now: shirts')
+      end
+    end
+  end
+
   def set_user_input
     allow_any_instance_of(Object).to receive(:gets).and_return(*user_input)
   end
