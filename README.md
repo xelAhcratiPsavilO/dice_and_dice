@@ -82,5 +82,6 @@ DND <== enquire_choice ==> Choice </br>
 DND <== show_input(input) ==> Topic/Choice </br>
 DND <== overwrite_input ==> Topic/Choice </br>
 DND <== enquire_option ==> Option </br>
+DND <== answer ==> String </br>
 
 ## Example of Use
