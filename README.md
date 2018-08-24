@@ -42,6 +42,16 @@ I'd like to enquire DND about my inputs.
 |Topic||
 |Choice||
 |DND|show_input(input)|
+```
+As a user,
+So that I can correct input mistakes,
+I'd like DND to overwrite inputs.
+```
+|Objects|Messages|
+|--|--|
+|Topic||
+|Choice||
+|DND|overwrite_input(input)|
 
 ## Diagram of Correlation
 
