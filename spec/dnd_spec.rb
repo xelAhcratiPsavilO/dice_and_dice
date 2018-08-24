@@ -15,14 +15,27 @@ describe Dnd do
   end
 
   describe '#show_input' do
-    let(:user_input) { ['What should I wear today?'] }
-    it 'shows the selected input' do
-      # arrange
-      set_user_input
-      # act
-      subject.get_topic
-      # assert
-      expect(subject.show_input('topic')).to eq('Your input was: What should I wear today?')
+    context 'showing the topic' do
+      let(:user_input) { ['What should I wear today?'] }
+      it 'shows the selected topic' do
+        # arrange
+        set_user_input
+        # act
+        subject.get_topic
+        # assert
+        expect(subject.show_input('topic')).to eq('Your input was: What should I wear today?')
+      end
+    end
+    context 'showing the choice2' do
+      let(:user_input) { ['jeans'] }
+      it 'shows the selected choice' do
+        # arrange
+        set_user_input
+        # act
+        subject.get_choice2
+        # assert
+        expect(subject.show_input('choice2')).to eq('Your input was: jeans')
+      end
     end
   end
 
