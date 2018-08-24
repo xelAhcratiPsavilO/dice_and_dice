@@ -13,6 +13,15 @@ For example:
 * Ability to effectively use, Ruby's REPL, irb.
 
 ## Domain Model
+```
+As a user,
+So that I can customise my DND,
+I'd like DND to enquire me about the topic.
+```
+|Objects|Messages|
+|--|--|
+|Topic||
+|DND|enquire_topic|
 
 ## Diagram of Correlation
 
