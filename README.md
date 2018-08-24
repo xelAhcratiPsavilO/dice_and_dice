@@ -32,6 +32,16 @@ I'd like DND to enquire me about the choices.
 |Topic||
 |Choice||
 |DND|enquire_choice|
+```
+As a user,
+So that I can check the information of my DND,
+I'd like to enquire DND about my inputs.
+```
+|Objects|Messages|
+|--|--|
+|Topic||
+|Choice||
+|DND|show_input(input)|
 
 ## Diagram of Correlation
 
