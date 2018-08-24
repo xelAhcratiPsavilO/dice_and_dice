@@ -57,5 +57,6 @@ I'd like DND to overwrite inputs.
 
 DND <== enquire_topic ==> Topic
 DND <== enquire_choice ==> Choice
+DND <== show_input(input) ==> Topic/Choice
 
 ## Example of Use
