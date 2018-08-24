@@ -52,12 +52,23 @@ I'd like DND to overwrite inputs.
 |Topic||
 |Choice||
 |DND|overwrite_input(input)|
+```
+As a user,
+So that I can customise my DND,
+I'd like DND to enquire me about the options.
+```
+|Objects|Messages|
+|--|--|
+|Topic||
+|Choice||
+|Option||
+|DND|enquire_option|
 
 ## Diagram of Correlation
 
-DND <== enquire_topic ==> Topic
-DND <== enquire_choice ==> Choice
-DND <== show_input(input) ==> Topic/Choice
-DND <== overwrite_input ==> Topic/Choice
+DND <== enquire_topic ==> Topic </br>
+DND <== enquire_choice ==> Choice </br>
+DND <== show_input(input) ==> Topic/Choice </br>
+DND <== overwrite_input ==> Topic/Choice </br>
 
 ## Example of Use
