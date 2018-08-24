@@ -11,6 +11,10 @@ class Dnd
   def show_input(input)
     if input == 'topic'
       p "Your input was: #{@topic}"
+    elsif input == 'choice1'
+      p "Your input was: #{@choice1}"
+    else input == 'choice2'
+      p "Your input was: #{@choice2}"
     end
   end
 
