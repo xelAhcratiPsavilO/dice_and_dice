@@ -4,4 +4,8 @@ class Dnd
     p "What question should I answer for you?"
   end
 
+  def enquire_choice
+    p "What choices should you have?"
+  end
+
 end
