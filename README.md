@@ -70,5 +70,6 @@ DND <== enquire_topic ==> Topic </br>
 DND <== enquire_choice ==> Choice </br>
 DND <== show_input(input) ==> Topic/Choice </br>
 DND <== overwrite_input ==> Topic/Choice </br>
+DND <== enquire_choice ==> Option </br>
 
 ## Example of Use
