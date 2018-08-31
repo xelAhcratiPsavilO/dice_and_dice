@@ -70,6 +70,17 @@ describe Dnd do
     end
   end
 
+  describe '#answer' do
+    it 'answers the user with a random set of options' do
+      # arrange
+#I need to stub the random method prior to answer to give me whatever answer I desire
+      # act
+      expect(subject.answer).to eq('You should wear blue jeans and red t-shirt')
+      # assert
+
+    end
+  end
+
   def set_user_input
     allow_any_instance_of(Object).to receive(:gets).and_return(*user_input)
   end
