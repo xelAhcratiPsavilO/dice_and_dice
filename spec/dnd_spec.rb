@@ -73,11 +73,12 @@ describe Dnd do
   describe '#answer' do
     it 'answers the user with a random set of options' do
       # arrange
-#I need to stub the random method prior to answer to give me whatever answer I desire
+      allow(subject).to receive(:randomize_choice1) { "blue jeans" }
+      allow(subject).to receive(:randomize_choice2) { "red t-shirt" }
       # act
-      expect(subject.answer).to eq('You should wear blue jeans and red t-shirt')
+      result = subject.answer
       # assert
-
+      expect(result).to eq('You should wear blue jeans and red t-shirt')
     end
   end
 
