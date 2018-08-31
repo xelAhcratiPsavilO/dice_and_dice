@@ -44,31 +44,31 @@ class Dnd
   # private
 
   def get_topic
-    @topic = gets
+    @topic = gets.chomp
   end
 
   def get_choice1
-    @choice1 = gets
+    @choice1 = gets.chomp
   end
 
   def get_choice2
-    @choice2 = gets
+    @choice2 = gets.chomp
   end
 
   def get_option11
-    @option11 = gets
+    @option11 = gets.chomp
   end
 
   def get_option12
-    @option12 = gets
+    @option12 = gets.chomp
   end
 
   def get_option21
-    @option21 = gets
+    @option21 = gets.chomp
   end
 
   def get_option22
-    @option22 = gets
+    @option22 = gets.chomp
   end
 
   def collect_options_for_choice1
