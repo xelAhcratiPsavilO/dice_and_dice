@@ -73,12 +73,12 @@ describe Dnd do
   describe '#answer' do
     it 'answers the user with a random set of options' do
       # arrange
-      allow(subject).to receive(:randomize_choice1) { "blue jeans" }
-      allow(subject).to receive(:randomize_choice2) { "red t-shirt" }
+      allow(subject).to receive(:randomize_choice1) { 'blue jeans' }
+      allow(subject).to receive(:randomize_choice2) { 'red t-shirt' }
       # act
       result = subject.answer
       # assert
-      expect(result).to eq('You should wear blue jeans and red t-shirt')
+      expect(result).to eq('You should go for blue jeans and red t-shirt')
     end
   end
 
